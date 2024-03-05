@@ -27,3 +27,9 @@ Código inicial da disciplina de computação paralela
 
 3. Um arquivo chamado `arquivo` foi criado na pasta. Rode-o usando:\
 `./arquivo`
+
+## Prints
+
+### Print exercício
+
+![alt](/assets/print_1.png)
