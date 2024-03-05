@@ -20,10 +20,10 @@ Código inicial da disciplina de computação paralela
 ## Instalação
 
 1. Clone o repositório com o seguinte comando:\
-`git clone https://github.com/JVT1204/Hello-World-C.git && cd Hello-World-C`
+`git clone https://github.com/JVT1204/Computacao_Paralela.git && cd Computacao_Paralela`
 
 2. Execute a compilação com o seguinte comando\
-`gcc Arquivo.c -o Arquivo`
+`gcc arquivo.c -o arquivo`
 
-3. Um arquivo chamado `Arquivo` foi criado na pasta. Rode-o usando:\
-`./Arquivo`
+3. Um arquivo chamado `arquivo` foi criado na pasta. Rode-o usando:\
+`./arquivo`
