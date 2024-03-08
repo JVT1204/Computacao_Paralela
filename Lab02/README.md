@@ -17,6 +17,7 @@ multiplicação matriz-vetor, utilizando na execução do programa terminal AWS
 
 - git
 - gcc
+- terminal AWS
 
 ## Instalação
 
@@ -24,7 +25,7 @@ multiplicação matriz-vetor, utilizando na execução do programa terminal AWS
 `git clone https://github.com/JVT1204/Computacao_Paralela.git && cd Computacao_Paralela && cd Lab02`
 
 2. Execute a compilação com o seguinte comando\
-`gcc arquivo.c -o arquivo`
+`gcc mult_threads.c -o arquivo`
 
 3. Um arquivo chamado `arquivo` foi criado na pasta. Rode-o usando:\
 `./arquivo`
