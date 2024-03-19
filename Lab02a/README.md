@@ -22,7 +22,7 @@ multiplicação matriz-vetor, utilizando na execução do programa terminal AWS
 ## Instalação
 
 1. Clone o repositório com o seguinte comando:\
-`git clone https://github.com/JVT1204/Computacao_Paralela.git && cd Computacao_Paralela && cd Lab02`
+`git clone https://github.com/JVT1204/Computacao_Paralela.git && cd Computacao_Paralela && cd Lab02a`
 
 2. Execute a compilação com o seguinte comando\
 `gcc mult_threads.c -o arquivo`
@@ -32,6 +32,6 @@ multiplicação matriz-vetor, utilizando na execução do programa terminal AWS
 
 ## Prints
 
-### Print exercício após correção
+### Print exercício após correção, tamanho Matriz A - > 20x20
 
 ![alt](/assets/print_2.png)
