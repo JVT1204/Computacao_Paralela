@@ -25,12 +25,14 @@ serial e paralelo do código
 `git clone https://github.com/JVT1204/Computacao_Paralela.git && cd Computacao_Paralela && cd Lab02b`
 
 2. Execute a compilação com o seguinte comando\
+`gcc cod_serial.c -o ex`
 `gcc mult_thread.c -o arquivo`
 
 3. Um arquivo chamado `arquivo` foi criado na pasta. Rode-o usando:\
+`./ex`
 `./arquivo`
 
 ## Prints
 
-### Print exercício após correção, tamanho Matriz A - > 20x20
+### Print exercício
 
