@@ -34,6 +34,12 @@ serial e paralelo do código
 
 ## Prints
 
+### Cpu info - foi possível a utilização de no máximo 6 núcleos
+
+![alt](/assets/cpu_info.png)
+
+# Exercício 1
+
 ### Print tempo de execução serial
 
 ![alt](/assets/tempo_serial.png)
@@ -42,6 +48,19 @@ serial e paralelo do código
 
 ![alt](/assets/tempo_paralelo.png)
 
-### Cpu info
+### Gráfico com tempos de execução
 
-![alt](/assets/cpu_info.png)
+![alt](/assets/)
+
+# Exercício 2
+
+### Gráfico com speedup
+
+![alt](/assets/)
+
+# Exercício 3
+
+Retirando a interação com o usuário dentro do código e automatizando a matriz e threads a serem
+utilizadas, ao retirar os "prints", o código não exige tanto do processador deixando a execução
+cada vez mais rápida. O código mult_thread não apresenta esses assuntos apresentados e tenta ser
+o mais paralelo possível para esse caso.
