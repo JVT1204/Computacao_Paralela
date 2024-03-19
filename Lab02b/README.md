@@ -34,5 +34,14 @@ serial e paralelo do código
 
 ## Prints
 
-### Print exercício
+### Print tempo de execução serial
 
+![alt](/assets/tempo_serial.png)
+
+### Print tempo de execução paralela
+
+![alt](/assets/tempo_paralelo.png)
+
+### Cpu info
+
+![alt](/assets/cpu_info.png)
