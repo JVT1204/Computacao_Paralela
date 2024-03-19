@@ -3,8 +3,8 @@
 #include <pthread.h>
 
 int block_size = 50;
-int m = 1000;                // Tamanho da matriz
-int n = 1000;                // Tamanho da matriz
+int m = 1000;                        // Tamanho da matriz
+int n = 1000;                        // Tamanho da matriz
 int thread_count;                    // Número de threads
 int **A;                             // Matriz A
 int *x;                              // Vetor x
@@ -28,11 +28,9 @@ void *Pth_mat_vect(void *rank) {
 }
 
 int main() {
-      // Número de blocos (ou threads)
 
+    // Número de blocos (ou threads)
     thread_count = n/block_size;  // Atualiza o número de threads para o número de blocos desejados
-
-    // Calcula o tamanho do bloco de linha
 
     // Aloca memória para a matriz A e inicializa seus elementos
     A = (int **)malloc(m * sizeof(int *));

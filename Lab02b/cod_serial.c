@@ -23,7 +23,7 @@ void *Pth_mat_vect(void *rank) {  // Função executada por cada thread.
         }
     }
 
-    return NULL;  // Retorna NULL (sem valor de retorno específico para threads).
+    return NULL;
 }
 
 int main() {  // Função principal do programa.
@@ -94,5 +94,5 @@ int main() {  // Função principal do programa.
     free(x);
     free(y);
 
-    return 0;  // Retorna 0 para indicar sucesso.
+    return 0;
 }
