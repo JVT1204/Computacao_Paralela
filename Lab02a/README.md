@@ -32,6 +32,6 @@ multiplicação matriz-vetor, utilizando na execução do programa terminal AWS
 
 ## Prints
 
-### Print exercício
+### Print exercício após correção
 
 ![alt](/assets/print_2.png)

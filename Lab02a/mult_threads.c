@@ -63,6 +63,27 @@ int main() {
         pthread_join(thread_handles[thread], NULL);
     }
 
+        // Imprime a matriz A.
+    printf("\nMatriz A:\n");
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            printf("%d\t", A[i][j]);
+        }
+        printf("\n");
+    }
+
+    // Imprime o vetor x.
+    printf("\nMatriz X:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d\n", x[i]);
+    }
+
+    // Imprime o vetor y (resultado da multiplicação).
+    printf("\nMultiplicação da matriz Y:\n");
+    for (int i = 0; i < m; i++) {
+    printf("y[%d] = %d\n", i, y[i]); // Adiciona um printf detalhado para cada elemento de y.
+    }
+
     free(thread_handles);
 
  // Libera memória alocada
