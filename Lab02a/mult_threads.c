@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <pthread.h>
 
-int block_size = 50;
-int m = 1000;                // Tamanho da matriz
-int n = 1000;                // Tamanho da matriz
+int block_size = 4;
+int m = 20;                // Tamanho da matriz
+int n = 20;                // Tamanho da matriz
 int thread_count;                    // Número de threads
 int **A;                             // Matriz A
 int *x;                              // Vetor x
