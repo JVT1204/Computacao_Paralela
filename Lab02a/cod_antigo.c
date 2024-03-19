@@ -1,8 +1,8 @@
-#include <stdio.h>         // Inclui a biblioteca de entrada e saída padrão.
-#include <stdlib.h>        // Inclui a biblioteca padrão do C, que inclui funções como alocação de memória e outras operações.
-#include <pthread.h>       // Inclui a biblioteca pthread, necessária para programação paralela em POSIX.
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
 
-int m, n, thread_count;    // Variáveis globais para armazenar o tamanho da matriz, o número de threads e dimensões da matriz.
+int m, n, thread_count;    // Variáveis para armazenar o tamanho da matriz, o número de threads e dimensões da matriz.
 int** A;                   // Matriz A.
 int* x;                    // Vetor x.
 int* y;                    // Vetor y (resultado da multiplicação).
@@ -23,15 +23,15 @@ void *Pth_mat_vect(void *rank) {  // Função executada por cada thread.
         }
     }
 
-    return NULL;  // Retorna NULL (sem valor de retorno específico para threads).
+    return NULL;
 }
 
 int main() {  // Função principal do programa.
     printf("Número de threads: ");  // Solicita o número de threads ao usuário.
     scanf("%d", &thread_count);     // Lê o número de threads.
 
-    m = 100;
-    n = 100;
+    m = 5;
+    n = 5;
     
     // Aloca memória para a matriz A e lê seus elementos.
     A = (int **) malloc(m * sizeof(int *));
@@ -62,6 +62,27 @@ int main() {  // Função principal do programa.
     // Aguarda o término das threads.
     for (long thread = 0; thread < thread_count; thread++) {
         pthread_join(thread_handles[thread], NULL);
+    }
+
+    // Imprime a matriz A.
+    printf("\nMatriz A:\n");
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            printf("%d\t", A[i][j]);
+        }
+        printf("\n");
+    }
+
+    // Imprime o vetor x.
+    printf("\nMatriz X:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d\n", x[i]);
+    }
+
+    // Imprime o vetor y (resultado da multiplicação).
+    printf("\nMultiplicação da matriz Y:\n");
+    for (int i = 0; i < m; i++) {
+    printf("y[%d] = %d\n", i, y[i]); // Adiciona um printf detalhado para cada elemento de y.
     }
 
     // Libera a memória alocada.
