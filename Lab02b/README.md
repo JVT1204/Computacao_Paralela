@@ -28,7 +28,7 @@ serial e paralelo do código
 `gcc cod_serial.c -o ex`
 `gcc mult_thread.c -o arquivo`
 
-3. Um arquivo chamado `arquivo` foi criado na pasta. Rode-o usando:\
+3. Um arquivo chamado `arquivo` ou `ex` foi criado na pasta. Rode-o usando:\
 `./ex`
 `./arquivo`
 
@@ -38,29 +38,21 @@ serial e paralelo do código
 
 ![alt](/assets/cpu_info.png)
 
-# Exercício 1
+# Exercício 1 e 2
 
-### Print tempo de execução serial
+### Print tempo de execução serial e Speedup
 
 ![alt](/assets/tempo_serial.png)
+![alt](/assets/serial.png)
 
-### Print tempo de execução paralela
+### Print tempo de execução paralela e Speedup
 
 ![alt](/assets/tempo_paralelo.png)
-
-### Gráfico com tempos de execução
-
-![alt](/assets/)
-
-# Exercício 2
-
-### Gráfico com speedup
-
-![alt](/assets/)
+![alt](/assets/paralelo.png)
 
 # Exercício 3
 
 Retirando a interação com o usuário dentro do código e automatizando a matriz e threads a serem
 utilizadas, ao retirar os "prints", o código não exige tanto do processador deixando a execução
-cada vez mais rápida. O código mult_thread não apresenta esses assuntos apresentados e tenta ser
-o mais paralelo possível para esse caso.
+cada vez mais rápida. O código mult_thread não apresenta esses assuntos e tenta ser o mais
+paralelo possível para esse caso.
