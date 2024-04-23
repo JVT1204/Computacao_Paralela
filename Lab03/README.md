@@ -43,6 +43,8 @@ total seja somada, descobrindo assim o resultado da integral
 
    `./exe a b n NUM_THREADS`
 
+   #### Exemplo: ./exe 0 10 1000000000
+
 4. Explicação sobre o que colocar no lugar dos argumentos acima:\
 ` a: Variável "a" do código`
 ` b: Variável "b" do código`
