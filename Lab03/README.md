@@ -47,9 +47,12 @@ total seja somada, descobrindo assim o resultado da integral
 
 4. Explicação sobre o que colocar no lugar dos argumentos acima:\
 ` a: Variável "a" do código`
-` b: Variável "b" do código`
-` n: Quantidade de trapézios que irão ser calculados`
-` NUM_THREADS: Quantidade de threads a serem utilizadas`
+
+    ` b: Variável "b" do código`
+
+    ` n: Quantidade de trapézios que irão ser calculados`
+
+    ` NUM_THREADS: Quantidade de threads a serem utilizadas`
 
 ## Exercícios
 
