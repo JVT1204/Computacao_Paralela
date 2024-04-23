@@ -95,3 +95,8 @@ total seja somada, descobrindo assim o resultado da integral
 
 # Exercício 3
 
+#### Com a introdução da diretiva critical no programa, somente uma das threads poderá modificar a variável de soma calculadas pelas threads. Mesmo que o speedup tenha a melhora de desempenho, graças ao fator critical que só permite uma thread por vez no uso da variável de soma, faz com que esse código não se distancie tanto do tempo de execução da verssão paralela
+
+![alt](/assets/Prints_Lab03/print_area_critical.png)
+
+![alt](/assets/Prints_Lab03/speedup_area_critical.png)
