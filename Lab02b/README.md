@@ -36,19 +36,19 @@ serial e paralelo do código
 
 ### Cpu info - foi possível a utilização de no máximo 6 núcleos
 
-![alt](/assets/cpu_info.png)
+![alt](/assets/Prints_Lab02b/cpu_info.png)
 
 # Exercício 1 e 2
 
 ### Print tempo de execução serial e Speedup
 
-![alt](/assets/tempo_serial.png)
-![alt](/assets/serial.png)
+![alt](/assets/Prints_Lab02b/tempo_serial.png)
+![alt](/assets/Prints_Lab02b/serial.png)
 
 ### Print tempo de execução paralela e Speedup
 
-![alt](/assets/tempo_paralelo.png)
-![alt](/assets/paralelo.png)
+![alt](/assets/Prints_Lab02b/tempo_paralelo.png)
+![alt](/assets/Prints_Lab02b/paralelo.png)
 
 # Exercício 3
 

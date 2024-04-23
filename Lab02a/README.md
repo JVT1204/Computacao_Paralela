@@ -34,4 +34,4 @@ multiplicação matriz-vetor, utilizando na execução do programa terminal AWS
 
 ### Print exercício após correção, tamanho Matriz A - > 20x20
 
-![alt](/assets/print_2.png)
+![alt](/assets/Prints_Lab02a/print_2.png)

@@ -32,4 +32,4 @@ Código inicial da disciplina de computação paralela
 
 ### Print exercício
 
-![alt](/assets/print_1.png)
+![alt](/assets/Prints_Lab01/print_1.png)
