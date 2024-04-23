@@ -5,7 +5,7 @@
 Laboratório dedicado construir uma solução paralela utilizando OpenMP, calculando 
 a área sobre sob a curva através da soma de trapézios da figura abaixo:
 
-![alt](/assets/figura_enunciado_Lab03.png)
+![alt](/assets/Prints_Lab03/figura_enunciado_Lab03.png)
 
 O cálculo dos diferentes trapézios é dividido entre as threads para que no final a área
 total seja somada, descobrindo assim o resultado da integral
@@ -63,12 +63,35 @@ total seja somada, descobrindo assim o resultado da integral
 
 ### Cpu info
 
-![alt](/assets/cpu_info_Lab03.png)
+![alt](/assets/Prints_Lab03/cpu_info_Lab03.png)
 
-# Exercício 1 e 2
+# Exercício 1
 
-### Print tempo de execução serial e Speedup
+### Print execução serial:
 
-### Print tempo de execução paralela e Speedup
+#### O tempo de execução serial não apresentou mudanças significativas durante o acréscimo dos núcleos de processamento
+
+![alt](/assets/Prints_Lab03/print_area_serial.png)
+
+### Print execução paralelo
+
+#### Para o tempo de execução paralelo, foi possível perceber uma mudança importante durante o acréscimo dos núcleos de processamento, o que fez com que o tempo total da execução fosse diminuído cada vez mais
+
+![alt](/assets/Prints_Lab03/print_area_paralelo.png)
+
+### Print tempo de execução serial x paralelo
+
+![alt](/assets/Prints_Lab03/areaparalelo_x_areaserial.png)
+
+# Exercício 2
+
+#### Para a versão serial, o speedup não houve mudança, sempre ficando na margem de 1, ou seja, não houve melhora de desempenho como acréscimo dos núcleos de processamento
+
+![alt](/assets/Prints_Lab03/speedup_area_serial.png)
+
+#### Já para a versão paralela, houve aumento de performance significativa como mostra o gráfico a seguir
+
+![alt](/assets/Prints_Lab03/speedup_area_paralelo.png)
 
 # Exercício 3
+
