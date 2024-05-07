@@ -26,13 +26,23 @@ Construir uma solução parelela que obtenha a melhor aproximação para serie d
 2. Execute a compilação com os seguintes comandos:\
 `gcc -o exe serial-v1.c -lmpfr`
 
-    `gcc -o exe area_paralelo.c -fopenmp -lmpfr`
+    `gcc -o exe paralelo-v1.c -fopenmp -lmpfr`
 
 
 3. Um arquivo chamado `exe` foi criado na pasta. Rode-o usando:\
-#### Exemplo de execução
-`./exe 10 1000`
+    #### Exemplos de execuções
+    `./exe 10 1000`
 
-`./exe 30 300`
+    `./exe 30 300`
 
+## Prints
 
+### CPU info
+
+![alt](/assets/Prints_Projeto-V1/cpu_info_Projeto-V1.png)
+
+### Prints de execução
+
+![alt](/assets/Prints_Projeto-V1/print_serial-v1.png)
+
+![alt](/assets/Prints_Projeto-V1/print_paralelo-v1.png)
