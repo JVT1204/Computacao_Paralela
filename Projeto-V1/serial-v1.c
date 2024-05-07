@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <mpfr.h>
+#include <mpfr.h> // Para aritmética de precisão arbitrária
 
 // Função para calcular fatoriais e armazená-los em um vetor de precisão arbitrária
 void fatorial(int n, mpfr_t* vet, int nBits) {
-    mpfr_init2(vet[0], nBits); // Primeiro elemento do vetor
+    mpfr_init2(vet[0], nBits); // Primeiro elemento do vetor com precisão especificada
     mpfr_set_d(vet[0], 1.0, MPFR_RNDU); // Primeiro elemento como 1.0
 
-    mpfr_init2(vet[1], nBits); // Segundo elemento do vetor
+    mpfr_init2(vet[1], nBits); // Segundo elemento do vetor com precisão especificada
     mpfr_set_d(vet[1], 1.0, MPFR_RNDU); // Segundo elemento como 1.0
 
     for (long int i = 2; i < n; ++i) { // Loop para calcular fatoriais para índices maiores que 1
@@ -19,7 +19,7 @@ void fatorial(int n, mpfr_t* vet, int nBits) {
 
 // Função para calcular a soma das inversas dos fatoriais
 void soma(int n, mpfr_t* vet, int nBits, mpfr_t* globalPointer) {
-    mpfr_t divisao, um;
+    mpfr_t divisao, um; // Variáveis temporárias para cálculos locais
 
     mpfr_init2(divisao, nBits); // Inicializa a variável temporária divisao
     mpfr_set_d(divisao, 1.0, MPFR_RNDU); // Define divisao como 1.0
