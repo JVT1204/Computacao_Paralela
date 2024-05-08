@@ -20,13 +20,18 @@ void fatorial(int n, mpfr_t* vet, int nBits) {
 }
 
 // Função para calcular a soma das inversas dos fatoriais
-void soma(int n, mpfr_t* vet, int nBits, mpfr_t* globalPointer) {
+void soma(int n, mpfr_t* vet, int nBits, mpfr_t* partialSum) {
     int posicao = omp_get_thread_num(); // Obtém o número da thread atual
     int n_threads = omp_get_num_threads(); // Obtém o número total de threads
 
     int parcela = n / n_threads; // Quantidade de elementos por thread
     int inicio = parcela * posicao; // Índice de início para a thread atual
-    int fim = (posicao == n_threads - 1) ? n : inicio + parcela; // Índice de fim para a thread atual
+    int fim; // Índice de fim para a thread atual
+    if (posicao == n_threads - 1) {
+        fim = n;
+    } else {
+        fim = inicio + parcela;
+    }
 
     mpfr_t parcial_local, divisao, um; // Variáveis temporárias para cálculos locais
 
@@ -45,10 +50,8 @@ void soma(int n, mpfr_t* vet, int nBits, mpfr_t* globalPointer) {
         mpfr_add(parcial_local, parcial_local, divisao, MPFR_RNDU); // Adiciona na soma parcial local
     }
 
-    #pragma omp critical // Início da região crítica para evitar condição de corrida
-    {
-        mpfr_add(*globalPointer, *globalPointer, parcial_local, MPFR_RNDU); // Atualiza a soma global
-    }
+    mpfr_set(*partialSum, parcial_local, MPFR_RNDU);
+    
     // Libera a memória alocada
     mpfr_clear(divisao); 
     mpfr_clear(parcial_local);
@@ -73,16 +76,22 @@ int main(int argc, char* argv[]) {
 
     fatorial(n, vet, nBits); // Calcula os fatoriais e armazena no vetor
 
+    mpfr_t partialSum;
+    mpfr_init2(partialSum, nBits); // Inicializa partialSum
+
     #pragma omp parallel num_threads(nThreads)
     {
-        soma(n, vet, nBits, &global); // Chama a função para calcular a soma das inversas dos fatoriais
+        soma(n, vet, nBits, &partialSum); // Chama a função para calcular a soma das inversas dos fatoriais
+        mpfr_add(global, global, partialSum, MPFR_RNDU);
     }
 
     printf("Resultado da aproximação de Euler: ");
     mpfr_out_str(stdout, 10, 0, global, MPFR_RNDU);
     printf("\n");
 
-    mpfr_clear(global); // Libera a memória alocada para a variável global
+    // Libera a memória alocada
+    mpfr_clear(global);
+    mpfr_clear(partialSum);
 
     return 0;
 }
