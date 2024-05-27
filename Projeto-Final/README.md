@@ -26,14 +26,15 @@ Construir uma solução parelela que obtenha a melhor aproximação para serie d
 2. Execute a compilação com os seguintes comandos:\
 `gcc -o exe serial-v1.c -lmpfr`
 
-    `gcc -o exe paralelo-v1.c -fopenmp -lmpfr`
+    `gcc -o exe paralelo-final.c -fopenmp -lmpfr`
 
+    `gcc -o exe critical-final.c -fopenmp -lmpfr`
 
 3. Um arquivo chamado `exe` foi criado na pasta. Rode-o usando:\
     #### Exemplos de execuções
-    `./exe 10 1000`
+    `./exe 8 10 1000`
 
-    `./exe 30 300`
+    `./exe 8 30 300`
 
 ## Prints
 
