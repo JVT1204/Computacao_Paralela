@@ -61,9 +61,7 @@ Construir uma solução parelela que obtenha a melhor aproximação para serie d
 
 ### Speedup para 1,2,4,6 e 8 processadores das execuções serial e paralela
 
-![alt](/assets/Prints_Projeto-Final/speedup_final_serial.png)
-
-![alt](/assets/Prints_Projeto-Final/speedup_final_paralelo.png)
+![alt](/assets/Prints_Projeto-Final/speedup_final.png)
 
 # Exercício 3
 
