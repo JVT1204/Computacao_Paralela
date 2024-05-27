@@ -74,7 +74,7 @@ int main(int argc, char* argv[]) {
         euler(n, vet, nBits, global); // Chama a função para calcular a soma das inversas dos fatoriais
     }
 
-    printf("Resultado da aproximação de Euler: ");
+//    printf("Resultado da aproximação de Euler: ");
     mpfr_out_str(stdout, 10, 0, global, MPFR_RNDN);
     printf("\n");
 
