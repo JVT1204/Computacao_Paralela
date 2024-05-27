@@ -75,8 +75,8 @@ int main(int argc, char* argv[]) {
     }
 
 //    printf("Resultado da aproximação de Euler: ");
-    mpfr_out_str(stdout, 10, 0, global, MPFR_RNDN);
-    printf("\n");
+//    mpfr_out_str(stdout, 10, 0, global, MPFR_RNDN);
+//    printf("\n");
 
     // Libera a memória alocada
     mpfr_clear(global);
