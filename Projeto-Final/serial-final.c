@@ -55,9 +55,9 @@ int main(int argc, char* argv[]) {
 
     soma(n, vet, nBits, &global); // Calcula a soma das inversas dos fatoriais
 
-//    printf("Resultado da aproximação de Euler: ");
-//    mpfr_out_str(stdout, 10, 0, global, MPFR_RNDU);
-//    printf("\n");
+    printf("Resultado da aproximação de Euler: ");
+    mpfr_out_str(stdout, 10, 0, global, MPFR_RNDU);
+    printf("\n");
 
     mpfr_clear(global); // Libera a memória alocada para a variável global
 
